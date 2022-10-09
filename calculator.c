@@ -51,12 +51,7 @@ double calculate(double a, double b, char operation)
 bool isValidOperator(char operator)
 {
     for (int i = 0; i < NUM_OPERATORS; i++)
-    {
-        if (operator== OPERATORS[i])
-        {
-            return true;
-        }
-    }
+        return operator== OPERATORS[i];
 }
 
 void calculatorUsecase(int time)
